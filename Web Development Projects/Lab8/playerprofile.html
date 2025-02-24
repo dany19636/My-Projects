@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the Arcade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Daniel's Arcade</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gamelibrary.html">Game Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="playerprofile.html">Player Profile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+<div class="container mt-4">
+    <h2>Create Your Player Profile</h2>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Player Name</label>
+    <input type="Name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputFavoriteGame" class="form-label">Favorite Game</label>
+    <input type="favorite" class="form-control" id="exampleInputFavoriteGame">
+  </div>
+  <div class="mb-3">
+    <label for="skillLevel" class="form-label">Skill Level</label>
+    <select class="form-select" id="skillLevel" required>
+    <option selected disabled value="">Choose...</option>
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="expert">Expert</option>
+</select>
+</div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>  
+    <br>
+    <h3>Achievements</h3>
+    <span class="badge text-bg-primary">First Blood</span>
+<span class="badge text-bg-secondary">Explorer</span>
+<span class="badge text-bg-success">Speedster</span>
+<span class="badge text-bg-danger">Survivor</span>
+<span class="badge text-bg-warning">Treasure Hunter</span>
+<span class="badge text-bg-info">Master Strategist</span>
+<span class="badge text-bg-light">Completionist</span>
+<span class="badge text-bg-dark">Challenge Accepted</span>
+<span class="badge text-bg-primary">Ultimate Champion</span>
+<span class="badge text-bg-secondary">Rookie</span>
+    <br><br>
+    <label>Player Level: 12</label>
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 25%">25%</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
