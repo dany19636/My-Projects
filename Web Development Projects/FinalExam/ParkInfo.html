@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Park Info - Chicago Park District</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Chicago_Park_District.png" alt="Chicago Park District Logo" width="75" height="75">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ParkInfo.html">Parks & Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ProgramInfo.html">Programs & Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+       <main class="container mt-5">
+        <h1>Parks & Facilities</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="#" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Enter Park Name or Zip Code" name="search">
+                        <button class="btn btn-primary" type="submit">
+                            <span class="fas fa-search"></span> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-5">
+      <img src="Images/map.PNG" class="img-fluid" alt="Map of Chicago Parks">
+    </div>
+        
+        <div class="mt-5">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Park Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+            <td>Millennium Park</td>
+            <td>201 E Randolph St, Chicago, IL 60602</td>
+            <td>Mon-Sun: 7:00 AM - 9:00 PM</td>
+          </tr>
+          <tr>
+            <td>Grant Park</td>
+            <td>337 E Randolph St, Chicago, IL 60601</td>
+            <td>Mon-Fri: 8:00 AM - 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Lincoln Park</td>
+            <td>2045 N Lincoln Park West, Chicago, IL 60614</td>
+            <td>Mon-Sat: 7:30 AM - 7:00 PM</td>
+          </tr>
+          <tr>
+            <td>Humboldt Park</td>
+            <td>1400 N Humboldt Blvd, Chicago, IL 60622</td>
+            <td>Mon-Fri: 9:00 AM - 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Chicago Riverwalk</td>
+            <td>1 W Wacker Dr, Chicago, IL 60601</td>
+            <td>Mon-Sun: 6:00 AM - 10:00 PM</td>
+          </tr>
+          <tr>
+            <td>Jackson Park</td>
+            <td>6401 S Stony Island Ave, Chicago, IL 60637</td>
+            <td>Mon-Fri: 8:00 AM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Washington Park</td>
+            <td>5531 S King Dr, Chicago, IL 60615</td>
+            <td>Mon-Sun: 7:00 AM - 9:00 PM</td>
+          </tr>
+          <tr>
+            <td>Northerly Island Park</td>
+            <td>1521 S Linn White Dr, Chicago, IL 60605</td>
+            <td>Mon-Fri: 6:00 AM - 8:00 PM</td>
+          </tr>
+          <tr>
+            <td>Maggie Daley Park</td>
+            <td>337 E Randolph St, Chicago, IL 60601</td>
+            <td>Mon-Sun: 7:30 AM - 8:00 PM</td>
+          </tr>
+          <tr>
+            <td>Palmer Park</td>
+            <td>201 E 111th St, Chicago, IL 60628</td>
+            <td>Mon-Sat: 8:00 AM - 6:00 PM</td>
+          </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+ 
+ 
+  <footer class="bg-light text-center text-lg-start mt-5 py-4">
+    <div class="container">
+        <p>&#xA9; 2024 Chicago Park District. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
