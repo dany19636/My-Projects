@@ -1,0 +1,200 @@
+<html>
+<head>
+    <style>
+        body{
+            background-color: grey;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        header img{
+            width: auto;
+            height: 125px;
+        }
+        nav{
+            display: flex;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            padding-right: 50px;
+            padding-top: 15px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+            font-size: 25px;
+        }
+        nav a:hover{
+            color: gainsboro;
+        }
+        .boxes ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .boxes li{
+            border: 2px solid black;
+            margin-right: 50px;
+            text-align: center;
+            width: 400px;
+            height: 350px;
+            background-color: whitesmoke;
+        }
+        .boxes img{
+            width: 400px;
+            height: 200px;
+        }
+        .boxes p{
+            font-size: 35px;
+        }
+        .title{
+            text-align: center;
+            font-size: 25px;
+        }
+        .title2{
+            text-align: center;
+            font-size: 25px;
+            margin-left: 700px;
+            margin-right: 700px;
+        }
+        .title2:hover{
+            color: gainsboro;
+            cursor: pointer;
+        }
+        .hours{
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hours ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: -1;
+            padding: 20;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+        .hours ul.days li{
+            margin-right: 70px;
+            margin-left: 60px;
+        }
+        .hours ul.times li{
+            margin-right: 60px;
+            margin-left: 50px;
+        }
+         button {
+             margin-top: -10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: grey;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 18px;
+            color: black;
+            display: none;
+        }
+        
+    </style>
+    </head>
+    
+    <body>
+    <header>
+        <img src="https://media.istockphoto.com/id/1126414258/vector/super-car-design-with-concept-sports-vehicle-icon-silhouette.jpg?s=612x612&w=0&k=20&c=aL_x1aO9isCQj80dAG2Lh6mnXJmqGrSC05i4B8bcOmo=">
+        <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <div class="title">
+        <h1>Inventory</h1>
+        </div>
+   
+        <div class="boxes">
+        <ul>
+  <li>
+    <img src="https://www.kbb.com/wp-content/uploads/2022/08/2022-mercedes-amg-eqs-front-left-3qtr.jpg" alt="car" />
+    <h1>Car</h1>
+      <button onclick="revealPrice(this)">Show Price</button>
+    <p class="price">$25,000</p>
+  </li>
+  <li>
+    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-tesla-cybertruck-3-672e75cce7814.jpg?crop=0.559xw:0.630xh;0.122xw,0.344xh&resize=768:*" alt="truck" />
+    <h1>Truck</h1>
+      <button onclick="revealPrice(this)">Show Price</button>
+    <p class="price">$100,000</p>
+  </li>
+  <li>
+    <img src="https://i.redd.it/bspg5v1c72vc1.jpeg" alt="minivan" />
+    <h1>Minivan</h1>
+      <button onclick="revealPrice(this)">Show Price</button>
+    <p class="price">$65,000</p>
+  </li>
+</ul>
+        </div>
+        
+        <div class="title2">
+        <h1 onclick="displaySchedule()">Hours of Operation</h1>
+        </div>
+        
+        <div class="hours">
+        <ul class="days">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ul>
+        <ul class="times">
+            <li>7am - 10pm</li>
+            <li>7am - 10pm</li>
+            <li>7am - 10pm</li>
+            <li>7am - 10pm</li>
+            <li>7am - 10pm</li>
+            <li>Closed</li>
+            <li>Closed</li>
+        </ul>    
+        </div>
+        
+        <script>
+        function revealPrice(button){
+            const price = button.nextElementSibling;
+            if(price.style.display == "none"){          //when button is pressed, the price for the specified is shown in the box
+                price.style.display = "block";
+                button.textContent = "Hide Price";
+            } else{
+                price.style.display = "none";
+                button.textContent = "Show Price";
+            }
+        }
+            
+        function displaySchedule(){
+            const schedule = document.querySelector('.hours');  //when pressing hours of operation, the schedule pops up on the screen
+            if(schedule.style.display === "none"){
+                schedule.style.display = "flex";
+            }else{
+                schedule.style.display = "none";
+            }
+        }
+        </script>
+    </body>
+</html>
