@@ -1,5 +1,5 @@
-//Use the Statistician class to calculate batting average
-//Created by James Vanderhyde, 30 August 2024
+//This program gives you the batting average of a player based on their hits and their strikes.
+
 package battingaverage;
 import java.util.Scanner;
 public class BattingAverage
