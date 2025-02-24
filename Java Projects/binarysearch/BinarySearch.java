@@ -1,4 +1,4 @@
-
+//This program gives you a range of numbers, you pick a number, the program uses binary search in order to check whether that number is within range and returns the position in the range.
 package binarysearch;
 
 import java.util.Scanner;
